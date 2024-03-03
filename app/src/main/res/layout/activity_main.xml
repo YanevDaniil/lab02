@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/a"
+            tools:text="@string/a" />
+
+        <EditText
+            android:id="@+id/txtA"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="number|numberDecimal|numberSigned"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/b"
+            tools:text="@string/b" />
+
+        <EditText
+            android:id="@+id/txtB"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="number|numberDecimal|numberSigned" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/res"
+            tools:text="@string/res" />
+
+        <TextView
+            android:id="@+id/txtRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:onClick="add_click"
+            android:text="@string/add"
+            tools:text="@string/add" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:onClick="sub_click"
+            android:text="@string/sub"
+            tools:text="@string/sub" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:onClick="mul_click"
+            android:text="@string/mul"
+            tools:text="@string/mul" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:onClick="div_click"
+            android:text="@string/div"
+            tools:text="@string/div" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSin"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:onClick="sin_click"
+            android:text="@string/sin" />
+
+        <Button
+            android:id="@+id/btnCos"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:onClick="cos_click"
+            android:text="@string/cos" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSqrt"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:onClick="sqrt_click"
+            android:text="@string/sqrt" />
+
+        <Button
+            android:id="@+id/btnPow"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:onClick="pow_click"
+            android:text="@string/pow" />
+    </LinearLayout>
+</LinearLayout>
